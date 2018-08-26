@@ -16,6 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    UIAlertController *alert = [UIAlertController alertControllerWithTitle:<#(nullable NSString *)#>
+//                                                                   message:<#(nullable NSString *)#>
+//                                                            preferredStyle:<#(UIAlertControllerStyle)#>];
+//    
+//    
+//    UIAlertAction *okAction = [[UIAlertAction actionWithTitle:@"" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+//        <#code#>
+//    }]]
+//    [alert addAction:<#(nonnull UIAlertAction *)#>
     // Do any additional setup after loading the view, typically from a nib.
 }
 

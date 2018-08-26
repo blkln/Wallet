@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		7D2932AE213143170020EBA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2932AD213143170020EBA8 /* main.m */; };
 		7D2932B8213143170020EBA8 /* WalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2932B7213143170020EBA8 /* WalletTests.m */; };
 		7D2932C3213143170020EBA8 /* WalletUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2932C2213143170020EBA8 /* WalletUITests.m */; };
+		7D2932D42131DF9C0020EBA8 /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2932D32131DF9C0020EBA8 /* Header.m */; };
+		7D2932D72131FA240020EBA8 /* RoundedCornersButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2932D62131FA240020EBA8 /* RoundedCornersButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		7D2932BE213143170020EBA8 /* WalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2932C2213143170020EBA8 /* WalletUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletUITests.m; sourceTree = "<group>"; };
 		7D2932C4213143170020EBA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D2932D22131DF9C0020EBA8 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		7D2932D32131DF9C0020EBA8 /* Header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Header.m; sourceTree = "<group>"; };
+		7D2932D52131FA240020EBA8 /* RoundedCornersButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundedCornersButton.h; sourceTree = "<group>"; };
+		7D2932D62131FA240020EBA8 /* RoundedCornersButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundedCornersButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +111,11 @@
 				7D29329F213143150020EBA8 /* AppDelegate.m */,
 				7D2932A1213143150020EBA8 /* ViewController.h */,
 				7D2932A2213143150020EBA8 /* ViewController.m */,
+				7D2932D22131DF9C0020EBA8 /* Header.h */,
+				7D2932D32131DF9C0020EBA8 /* Header.m */,
 				7D2932A4213143150020EBA8 /* Main.storyboard */,
+				7D2932D52131FA240020EBA8 /* RoundedCornersButton.h */,
+				7D2932D62131FA240020EBA8 /* RoundedCornersButton.m */,
 				7D2932A7213143160020EBA8 /* Assets.xcassets */,
 				7D2932A9213143160020EBA8 /* LaunchScreen.storyboard */,
 				7D2932AC213143170020EBA8 /* Info.plist */,
@@ -199,19 +209,22 @@
 				TargetAttributes = {
 					7D29329A213143150020EBA8 = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 					};
 					7D2932B2213143170020EBA8 = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 7D29329A213143150020EBA8;
 					};
 					7D2932BD213143170020EBA8 = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 7D29329A213143150020EBA8;
 					};
 				};
 			};
 			buildConfigurationList = 7D293296213143150020EBA8 /* Build configuration list for PBXProject "Wallet" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -262,8 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D2932D42131DF9C0020EBA8 /* Header.m in Sources */,
 				7D2932A3213143150020EBA8 /* ViewController.m in Sources */,
 				7D2932AE213143170020EBA8 /* main.m in Sources */,
+				7D2932D72131FA240020EBA8 /* RoundedCornersButton.m in Sources */,
 				7D2932A0213143150020EBA8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,13 +450,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Wallet/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SVK.Wallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -451,13 +463,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Wallet/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SVK.Wallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -467,11 +476,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WalletTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SVK.WalletTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,11 +490,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WalletTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SVK.WalletTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -502,11 +503,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WalletUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SVK.WalletUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -519,11 +516,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WalletUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SVK.WalletUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
