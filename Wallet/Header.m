@@ -17,6 +17,11 @@
 -(void)awakeFromNib
 {
     [super awakeFromNib];
+//    self.backgoundGradientView.layer.mask = gradientMask;
+}
+
+-(void)layout
+{
     CAGradientLayer *gradientMask = [CAGradientLayer layer];
     gradientMask.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     UIColor *firstColor = [UIColor colorWithRed:58.0 / 255.0 green:56.0 / 255.0 blue:196.0 / 255.0 alpha:1];
@@ -25,7 +30,6 @@
     gradientMask.startPoint = CGPointMake(0.0, 0.5);
     gradientMask.endPoint = CGPointMake(1.0, 0.5);
     [self.backgoundGradientView.layer addSublayer:gradientMask];
-//    self.backgoundGradientView.layer.mask = gradientMask;
 }
 
 /*

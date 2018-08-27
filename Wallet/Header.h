@@ -12,4 +12,6 @@
 
 @property(weak) IBOutlet UIView *backgoundGradientView;
 
+-(void)layout;
+
 @end

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "RoundedCornersButton.h"
+#import "Header.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,8 @@
 @property (strong, nonatomic) IBOutlet RoundedCornersButton *billButton;
 @property (weak, nonatomic) IBOutlet RoundedCornersButton *replenishButton;
 @property (weak, nonatomic) IBOutlet RoundedCornersButton *withdrawButton;
+@property (weak, nonatomic) IBOutlet Header *header;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *tableViewHeightConstraint;
 
 @property (weak, nonatomic) IBOutlet UILabel *accountNumber;
 @property (weak, nonatomic) IBOutlet UILabel *balance;
@@ -152,6 +155,7 @@
         accountImage.image = [UIImage imageNamed:indexPath.section == 1 ? @"visa" : @"mastercard"];
     }
     
+    [self.tableViewHeightConstraint setConstant:tableView.contentSize.height];
 
     return cell;
 }
@@ -248,27 +252,6 @@
 
     for (id value in jsonData[@"last"]) {
         [self.last addObject:value];             //  3 elements
-    }
-    
-    for (NSDictionary *dictionary in self.invoices) {
-        for (NSString *key in dictionary) {
-            id value = dictionary[key];
-            NSLog(@"%@ : %@", key, value);
-        }
-    }
-    
-    for (NSDictionary *dictionary in self.favorites) {
-        for (NSString *key in dictionary) {
-            id value = dictionary[key];
-            NSLog(@"%@ : %@", key, value);
-        }
-    }
-    
-    for (NSDictionary *dictionary in self.last) {
-        for (NSString *key in dictionary) {
-            id value = dictionary[key];
-            NSLog(@"%@ : %@", key, value);
-        }
     }
 }
 
@@ -379,6 +362,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self readData];
+}
+
+- (void)viewDidLayoutSubviews {
+    [self.header layout];
 }
 
 @end

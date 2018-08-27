@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		7D2932A0213143150020EBA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D29329F213143150020EBA8 /* AppDelegate.m */; };
-		7D2932A3213143150020EBA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2932A2213143150020EBA8 /* ViewController.m */; };
-		7D2932A6213143150020EBA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2932A4213143150020EBA8 /* Main.storyboard */; };
 		7D2932A8213143160020EBA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2932A7213143160020EBA8 /* Assets.xcassets */; };
 		7D2932AB213143160020EBA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2932A9213143160020EBA8 /* LaunchScreen.storyboard */; };
 		7D2932AE213143170020EBA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2932AD213143170020EBA8 /* main.m */; };
 		7D2932B8213143170020EBA8 /* WalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2932B7213143170020EBA8 /* WalletTests.m */; };
 		7D2932C3213143170020EBA8 /* WalletUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2932C2213143170020EBA8 /* WalletUITests.m */; };
-		7D2932D42131DF9C0020EBA8 /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2932D32131DF9C0020EBA8 /* Header.m */; };
 		7D2932D72131FA240020EBA8 /* RoundedCornersButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2932D62131FA240020EBA8 /* RoundedCornersButton.m */; };
 		7D6694F3213367A100681B15 /* dashboard.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D6694F2213367A000681B15 /* dashboard.json */; };
 		7D6694F62133CD1000681B15 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6694F52133CD1000681B15 /* CustomTableViewCell.m */; };
+		7DE3CE8F21342FF300347882 /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE3CE8B21342FF300347882 /* Header.m */; };
+		7DE3CE9021342FF300347882 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE3CE8C21342FF300347882 /* Main.storyboard */; };
+		7DE3CE9121342FF300347882 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE3CE8E21342FF300347882 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +42,6 @@
 		7D29329B213143150020EBA8 /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D29329E213143150020EBA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7D29329F213143150020EBA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7D2932A1213143150020EBA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7D2932A2213143150020EBA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7D2932A5213143150020EBA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D2932A7213143160020EBA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D2932AA213143160020EBA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D2932AC213143170020EBA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,13 +52,16 @@
 		7D2932BE213143170020EBA8 /* WalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2932C2213143170020EBA8 /* WalletUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletUITests.m; sourceTree = "<group>"; };
 		7D2932C4213143170020EBA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D2932D22131DF9C0020EBA8 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
-		7D2932D32131DF9C0020EBA8 /* Header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Header.m; sourceTree = "<group>"; };
 		7D2932D52131FA240020EBA8 /* RoundedCornersButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundedCornersButton.h; sourceTree = "<group>"; };
 		7D2932D62131FA240020EBA8 /* RoundedCornersButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundedCornersButton.m; sourceTree = "<group>"; };
 		7D6694F2213367A000681B15 /* dashboard.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = dashboard.json; path = Wallet/dashboard.json; sourceTree = "<group>"; };
 		7D6694F42133CD1000681B15 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		7D6694F52133CD1000681B15 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		7DE3CE8A21342FF300347882 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		7DE3CE8B21342FF300347882 /* Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Header.m; sourceTree = "<group>"; };
+		7DE3CE8C21342FF300347882 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7DE3CE8D21342FF300347882 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7DE3CE8E21342FF300347882 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +113,11 @@
 		7D29329D213143150020EBA8 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
-				7D2932A4213143150020EBA8 /* Main.storyboard */,
-				7D2932A1213143150020EBA8 /* ViewController.h */,
-				7D2932A2213143150020EBA8 /* ViewController.m */,
-				7D2932D22131DF9C0020EBA8 /* Header.h */,
-				7D2932D32131DF9C0020EBA8 /* Header.m */,
+				7DE3CE8A21342FF300347882 /* Header.h */,
+				7DE3CE8B21342FF300347882 /* Header.m */,
+				7DE3CE8C21342FF300347882 /* Main.storyboard */,
+				7DE3CE8D21342FF300347882 /* ViewController.h */,
+				7DE3CE8E21342FF300347882 /* ViewController.m */,
 				7D2932D52131FA240020EBA8 /* RoundedCornersButton.h */,
 				7D2932D62131FA240020EBA8 /* RoundedCornersButton.m */,
 				7D6694F721340D4E00681B15 /* Supporting Files */,
@@ -267,7 +267,7 @@
 				7D2932AB213143160020EBA8 /* LaunchScreen.storyboard in Resources */,
 				7D2932A8213143160020EBA8 /* Assets.xcassets in Resources */,
 				7D6694F3213367A100681B15 /* dashboard.json in Resources */,
-				7D2932A6213143150020EBA8 /* Main.storyboard in Resources */,
+				7DE3CE9021342FF300347882 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,12 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D2932D42131DF9C0020EBA8 /* Header.m in Sources */,
-				7D2932A3213143150020EBA8 /* ViewController.m in Sources */,
+				7DE3CE9121342FF300347882 /* ViewController.m in Sources */,
 				7D6694F62133CD1000681B15 /* CustomTableViewCell.m in Sources */,
 				7D2932AE213143170020EBA8 /* main.m in Sources */,
 				7D2932D72131FA240020EBA8 /* RoundedCornersButton.m in Sources */,
 				7D2932A0213143150020EBA8 /* AppDelegate.m in Sources */,
+				7DE3CE8F21342FF300347882 /* Header.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,14 +333,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7D2932A4213143150020EBA8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7D2932A5213143150020EBA8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7D2932A9213143160020EBA8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
