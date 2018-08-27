@@ -13,5 +13,7 @@
 @property (assign) IBInspectable CGFloat cornerRadius;
 @property (assign) CGColorRef *shadowColor;
 @property (assign) IBInspectable CGFloat shadowOpacity;
+@property (nonatomic) NSString *buttonTitle;
+@property (nonatomic) NSString *buttonDescription;
 
 @end

@@ -17,6 +17,8 @@
 		7D2932C3213143170020EBA8 /* WalletUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2932C2213143170020EBA8 /* WalletUITests.m */; };
 		7D2932D42131DF9C0020EBA8 /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2932D32131DF9C0020EBA8 /* Header.m */; };
 		7D2932D72131FA240020EBA8 /* RoundedCornersButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2932D62131FA240020EBA8 /* RoundedCornersButton.m */; };
+		7D6694F3213367A100681B15 /* dashboard.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D6694F2213367A000681B15 /* dashboard.json */; };
+		7D6694F62133CD1000681B15 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6694F52133CD1000681B15 /* CustomTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,9 @@
 		7D2932D32131DF9C0020EBA8 /* Header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Header.m; sourceTree = "<group>"; };
 		7D2932D52131FA240020EBA8 /* RoundedCornersButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundedCornersButton.h; sourceTree = "<group>"; };
 		7D2932D62131FA240020EBA8 /* RoundedCornersButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundedCornersButton.m; sourceTree = "<group>"; };
+		7D6694F2213367A000681B15 /* dashboard.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = dashboard.json; path = Wallet/dashboard.json; sourceTree = "<group>"; };
+		7D6694F42133CD1000681B15 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		7D6694F52133CD1000681B15 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +92,7 @@
 		7D293292213143150020EBA8 = {
 			isa = PBXGroup;
 			children = (
+				7D6694F2213367A000681B15 /* dashboard.json */,
 				7D29329D213143150020EBA8 /* Wallet */,
 				7D2932B6213143170020EBA8 /* WalletTests */,
 				7D2932C1213143170020EBA8 /* WalletUITests */,
@@ -107,19 +113,14 @@
 		7D29329D213143150020EBA8 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
-				7D29329E213143150020EBA8 /* AppDelegate.h */,
-				7D29329F213143150020EBA8 /* AppDelegate.m */,
+				7D2932A4213143150020EBA8 /* Main.storyboard */,
 				7D2932A1213143150020EBA8 /* ViewController.h */,
 				7D2932A2213143150020EBA8 /* ViewController.m */,
 				7D2932D22131DF9C0020EBA8 /* Header.h */,
 				7D2932D32131DF9C0020EBA8 /* Header.m */,
-				7D2932A4213143150020EBA8 /* Main.storyboard */,
 				7D2932D52131FA240020EBA8 /* RoundedCornersButton.h */,
 				7D2932D62131FA240020EBA8 /* RoundedCornersButton.m */,
-				7D2932A7213143160020EBA8 /* Assets.xcassets */,
-				7D2932A9213143160020EBA8 /* LaunchScreen.storyboard */,
-				7D2932AC213143170020EBA8 /* Info.plist */,
-				7D2932AD213143170020EBA8 /* main.m */,
+				7D6694F721340D4E00681B15 /* Supporting Files */,
 			);
 			path = Wallet;
 			sourceTree = "<group>";
@@ -140,6 +141,21 @@
 				7D2932C4213143170020EBA8 /* Info.plist */,
 			);
 			path = WalletUITests;
+			sourceTree = "<group>";
+		};
+		7D6694F721340D4E00681B15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D29329E213143150020EBA8 /* AppDelegate.h */,
+				7D29329F213143150020EBA8 /* AppDelegate.m */,
+				7D2932A7213143160020EBA8 /* Assets.xcassets */,
+				7D2932A9213143160020EBA8 /* LaunchScreen.storyboard */,
+				7D2932AC213143170020EBA8 /* Info.plist */,
+				7D2932AD213143170020EBA8 /* main.m */,
+				7D6694F42133CD1000681B15 /* CustomTableViewCell.h */,
+				7D6694F52133CD1000681B15 /* CustomTableViewCell.m */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +266,7 @@
 			files = (
 				7D2932AB213143160020EBA8 /* LaunchScreen.storyboard in Resources */,
 				7D2932A8213143160020EBA8 /* Assets.xcassets in Resources */,
+				7D6694F3213367A100681B15 /* dashboard.json in Resources */,
 				7D2932A6213143150020EBA8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +294,7 @@
 			files = (
 				7D2932D42131DF9C0020EBA8 /* Header.m in Sources */,
 				7D2932A3213143150020EBA8 /* ViewController.m in Sources */,
+				7D6694F62133CD1000681B15 /* CustomTableViewCell.m in Sources */,
 				7D2932AE213143170020EBA8 /* main.m in Sources */,
 				7D2932D72131FA240020EBA8 /* RoundedCornersButton.m in Sources */,
 				7D2932A0213143150020EBA8 /* AppDelegate.m in Sources */,
@@ -478,6 +496,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WalletTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SVK.WalletTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -492,6 +511,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WalletTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SVK.WalletTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +525,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WalletUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SVK.WalletUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,6 +539,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WalletUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SVK.WalletUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

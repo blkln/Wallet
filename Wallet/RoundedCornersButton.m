@@ -25,10 +25,10 @@
     self.layer.shadowColor = [[UIColor grayColor]CGColor];
 }
 
--(CGColorRef)shadowColor
-{
-    return self.layer.shadowColor;
-}
+//-(CGColorRef)shadowColor
+//{
+//    return self.layer.shadowColor;
+//}
 
 -(void)setShadowOpacity:(CGFloat)shadowOpacity
 {
@@ -39,8 +39,6 @@
 {
     return self.layer.shadowOpacity;
 }
-
-
 
 /*
 // Only override drawRect: if you perform custom drawing.
