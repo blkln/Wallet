@@ -260,10 +260,10 @@
 
 -(NSAttributedString *)makeAttributedAccountNumberString
 {
-    NSMutableAttributedString *attrStartingString = [[NSMutableAttributedString alloc] initWithString:@"LeoWallet "];
+    NSMutableAttributedString *attrStartingString = [[NSMutableAttributedString alloc] initWithString:@"Wallet "];
     [attrStartingString addAttribute:NSFontAttributeName
                        value:[UIFont systemFontOfSize:13]
-                       range:NSMakeRange(0, [@"LeoWallet " length])];
+                       range:NSMakeRange(0, [@"Wallet " length])];
     NSMutableAttributedString *attrEndingString = [[NSMutableAttributedString alloc] initWithString:self.accountNumberString];
     [attrEndingString addAttribute:NSFontAttributeName
                              value:[UIFont boldSystemFontOfSize:15]

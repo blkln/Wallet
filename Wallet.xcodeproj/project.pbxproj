@@ -113,11 +113,11 @@
 		7D29329D213143150020EBA8 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
-				7DE3CE8A21342FF300347882 /* Header.h */,
-				7DE3CE8B21342FF300347882 /* Header.m */,
 				7DE3CE8C21342FF300347882 /* Main.storyboard */,
 				7DE3CE8D21342FF300347882 /* ViewController.h */,
 				7DE3CE8E21342FF300347882 /* ViewController.m */,
+				7DE3CE8A21342FF300347882 /* Header.h */,
+				7DE3CE8B21342FF300347882 /* Header.m */,
 				7D2932D52131FA240020EBA8 /* RoundedCornersButton.h */,
 				7D2932D62131FA240020EBA8 /* RoundedCornersButton.m */,
 				7D6694F721340D4E00681B15 /* Supporting Files */,
@@ -459,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TR5SC49852;
 				INFOPLIST_FILE = Wallet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -473,6 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TR5SC49852;
 				INFOPLIST_FILE = Wallet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
